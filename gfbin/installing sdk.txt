@@ -1,0 +1,4 @@
+open cmd on this location and execute
+
+
+composer require facebook/graph-sdk
