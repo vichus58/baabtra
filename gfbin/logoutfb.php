@@ -15,8 +15,8 @@ if(!isset($_COOKIE['token'])) {
 
 
 $fb = new Facebook\Facebook([
-  'app_id' => '726437707527497', // Replace {app-id} with your app id
-  'app_secret' => 'baaf77a634dab7d557b9309aa4f73a85',
+  'app_id' => '{app-id}', // Replace {app-id} with your app id
+  'app_secret' => '{app-secret}',
   'default_graph_version' => 'v2.2',
   ]);
 if(isset($token))

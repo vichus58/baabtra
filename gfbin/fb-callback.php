@@ -7,8 +7,8 @@ if(!session_id()) {
 }
 
 $fb = new Facebook\Facebook([
-  'app_id' => '726437707527497', // Replace {app-id} with your app id
-  'app_secret' => 'baaf77a634dab7d557b9309aa4f73a85',
+  'app_id' => '{your-app-id}', // Replace {app-id} with your app id
+  'app_secret' => '{your-app-secret}',
   'default_graph_version' => 'v2.2',
   ]);
 
@@ -49,7 +49,7 @@ $oAuth2Client = $fb->getOAuth2Client();
 $tokenMetadata = $oAuth2Client->debugToken($accessToken);
 
 // Validation (these will throw FacebookSDKException's when they fail)
-$tokenMetadata->validateAppId('726437707527497'); // Replace {app-id} with your app id
+$tokenMetadata->validateAppId({your-app-id}); // Replace {app-id} with your app id
 // If you know the user ID this access token belongs to, you can validate it here
 //$tokenMetadata->validateUserId('123');
 $tokenMetadata->validateExpiration();
